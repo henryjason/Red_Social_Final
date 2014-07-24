@@ -13,7 +13,7 @@
     <title>Full - Start Bootstrap Template</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/full.css" rel="stylesheet">
@@ -44,8 +44,8 @@
                 <div class="navbar-brand">
 
                 <a href="#">Social People</a>
-                  <input type="text" >
-                  <button type="button">Buscar</button>
+                 <!-- <input type="text" >
+                  <button type="button">Buscar</button> -->
       
                 </div>
 
@@ -71,9 +71,104 @@
         <!-- /.container -->
 
 
-         
-
     </nav>
+
+
+<div class="row1">
+
+  <div class="col-xs-4 col-sm-3">
+
+           <div class="row">
+              <div class="col-md-12">
+
+                    <div class="panel-heading text-rigth"><strong>Perfil</strong>
+                       <ul>
+                    	 <li>Henry Jason</li>
+                     	 <li>Henry Jason2</li>
+                    	 <li>Henry Jason3</li>
+                     	 <li>Henry Jason4</li>
+                      </ul>
+
+                    </div>
+
+                    <div class="panel-heading text-rigth"><strong>Amigos</strong>
+                       <ul>
+                    	 <li>Henry Jason</li>
+                     	 <li>Henry Jason2</li>
+                    	 <li>Henry Jason3</li>
+                     	 <li>Henry Jason4</li>
+                      </ul>
+
+                    </div>
+
+                     <div class="panel-heading text-rigth"><strong>Sugeridos</strong>
+                       <ul>
+                    	 <li>Henry Jason</li>
+                     	 <li>Henry Jason2</li>
+                    	 <li>Henry Jason3</li>
+                     	 <li>Henry Jason4</li>
+                      </ul>
+
+                    </div>
+
+                     <div class="panel-heading text-rigth"><strong>Perfil</strong>
+                       <ul>
+                    	 <li>Henry Jason</li>
+                     	 <li>Henry Jason2</li>
+                    	 <li>Henry Jason3</li>
+                     	 <li>Henry Jason4</li>
+                      </ul>
+
+                    </div>
+
+                    <div class="panel-heading text-rigth"><strong>Amigos</strong>
+                       <ul>
+                    	 <li>Henry Jason</li>
+                     	 <li>Henry Jason2</li>
+                    	 <li>Henry Jason3</li>
+                     	 <li>Henry Jason4</li>
+                      </ul>
+
+                    </div>
+
+                     <div class="panel-heading text-rigth"><strong>Sugeridos</strong>
+                       <ul>
+                    	 <li>Henry Jason</li>
+                     	 <li>Henry Jason2</li>
+                    	 <li>Henry Jason3</li>
+                     	 <li>Henry Jason4</li>
+                      </ul>
+
+                    </div>
+
+
+                </div>
+
+          </div>
+
+  </div>
+
+  <div class="col-xs-8 col-sm-9">
+
+   <div class="row">
+
+
+            <div class="col-md-6">
+              <button class="btn btn-primary btn-lg btn-block" id="local_click">Click4</button>
+            </div>
+
+
+            <div class="col-md-6">
+              <button class="btn btn-default btn-lg btn-block" id="local_clear">Clear4</button>
+            </div>
+          </div>
+
+  </div>
+ 
+</div>
+
+
+
 
     <!-- Put your page content here! -->
 
