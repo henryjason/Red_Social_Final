@@ -15,9 +15,27 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	public function showWelcome()
+	public function index()
 	{
-		return View::make('hello');
+		$this->layout->titulo = 'Social People';
+		return $this->layout->nest('content', 'home.home');
 	}
+
+	  public function login()
+    {
+    	$this->layout->titulo = 'Login';
+    	$this->layout->nest('content', 'user.register');
+    }
+
+    public function register()
+    {
+    	$this->layout->titulo = 'Register';
+    	$this->layout->nest('content', 'user.register');
+    }
+
+    public function restricted()
+    {
+    	$this->layout->nest('content', 'restricted');
+    }
 
 }

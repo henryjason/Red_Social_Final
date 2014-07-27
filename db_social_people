@@ -1,0 +1,15 @@
+﻿drop table if exists  users;
+
+
+create table users(
+	id serial not null primary key,
+	avatar varchar not null,
+	nombre varchar not null,
+	biografia varchar not null,
+	email varchar not null,
+	nickname varchar not null,
+	telefono varchar not null,
+	dirección varchar not null,
+	remember_token varchar,
+	password varchar not null
+);

@@ -2,6 +2,8 @@
 
 class BaseController extends Controller {
 
+
+	protected $layout = 'layouts.default';
 	/**
 	 * Setup the layout used by the controller.
 	 *
@@ -14,5 +16,5 @@ class BaseController extends Controller {
 			$this->layout = View::make($this->layout);
 		}
 	}
-
+	
 }

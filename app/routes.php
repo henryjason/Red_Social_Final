@@ -11,7 +11,24 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
+Route::group(array('after' => 'auth'), function () {
+
+Route::get('login', 'HomeController@login');
+Route::get('register', 'HomeController@register');
+
+
+Route::get('logout', 'UserController@logout');
+
+
+Route::post('login', 'UserController@login');
+Route::post('register', 'UserController@register');
+Route::get('auth', 'UserController@isLogged');
+
+
+});
+
+Route::group(array('before' => 'auth'), function () {
+
+	Route::get('/', 'HomeController@index');
+
 });
