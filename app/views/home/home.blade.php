@@ -100,12 +100,12 @@
 
 
             <div class="col-md-6">
-              <button class="btn btn-primary btn-lg btn-block" id="local_click">Click4</button>
+              <button class="btn btn-primary btn-lg btn-block" id="local_click">Pantalla principal</button>
             </div>
 
 
             <div class="col-md-6">
-              <button class="btn btn-default btn-lg btn-block" id="local_clear">Clear4</button>
+              <button class="btn btn-default btn-lg btn-block" id="local_clear">Pantalla principal</button>
             </div>
           </div>
 

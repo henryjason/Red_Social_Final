@@ -20,9 +20,11 @@
 
 				<div class="navbar-brand">
 
-                    <a href="#">Social People</a>
+                  {{HTML::link('/', 'Social People')}}
 				 <!-- <input type="text" >
               <button type="button">Buscar</button> -->
+
+
 
           </div>
 
@@ -31,15 +33,21 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-         <li>
-          <a href="#">About</a>
+      <li>
+          <a href="register">Registrar</a>
       </li>
       <li>
-          <a href="#">Services</a>
+        
+                 @if (Auth::check())
+
+  {{HTML::link('logout', 'Logout')}}
+
+@else
+  {{HTML::link('login', 'Login')}}
+
+@endif
       </li>
-      <li>
-          <a href="#">Contact</a>
-      </li>
+
   </ul>
 </div>
 <!-- /.navbar-collapse -->
@@ -137,7 +145,7 @@
   <div class="panel-heading text-center"><strong>Registrate Gratis</strong></div>
 
 
-<form role="form" method="post" >
+<form role="form" method="post" action="register" >
 
 
    <div class="row">   <!-- /.row  usuario-->
@@ -147,7 +155,7 @@
 
        <div class="form-group">
            <label class="sr-only" for="nombre_registro">Nombre</label>
-            <input type="text" class="form-control" name="nombre_registro" 
+            <input type="text" class="form-control" name="nombre" 
            placeholder="Nombre">
         </div>
 
@@ -157,8 +165,18 @@
 
       <div class="form-group">
          <label class="sr-only" for="apellido_registro">Apellido</label>
-        <input type="text" class="form-control" name="apellido_registro" 
+        <input type="text" class="form-control" name="apellido" 
           placeholder="Apellido">
+      </div>
+
+  </div>
+
+  <div class="col-xs-12 col-sm-8"> <!-- /.nickname_registro-->
+
+      <div class="form-group">
+         <label class="sr-only" for="nickname_registro">nickname</label>
+        <input type="text" class="form-control" name="nickname" 
+          placeholder="nickname">
       </div>
 
   </div>
@@ -167,7 +185,7 @@
 
       <div class="form-group">
          <label class="sr-only" for="apellido_registro">Correo Electronico</label>
-        <input type="email" class="form-control" name="email_registro" 
+        <input type="email" class="form-control" name="email" 
           placeholder="Correo Electronico">
       </div>
 
@@ -177,7 +195,7 @@
 
       <div class="form-group">
          <label class="sr-only" for="password_registro">PassWord</label>
-        <input type="password" class="form-control" name="password_registro" 
+        <input type="password" class="form-control" name="password" 
           placeholder="Contraseña">
       </div>
 
@@ -187,7 +205,7 @@
 
       <div class="form-group">
          <label class="sr-only" for="password_again_registro">Repita la PassWord</label>
-        <input type="password" class="form-control" name="password_again_registro" 
+        <input type="password" class="form-control" name="password_confirmation" 
           placeholder="Repita la Contraseña">
       </div>
 
@@ -219,36 +237,9 @@
    <div class="row">
        <div class="col-md-12">
 
-           <div class="panel-heading text-rigth"><strong>Perfil</strong>
-            <ul>
-             <li>Henry Jason</li>
-             <li>Henry Jason2</li>
-             <li>Henry Jason3</li>
-             <li>Henry Jason4</li>
-         </ul>
-
+           <div class="panel-heading text-rigth"><strong>Conectar con facebook</strong>
+         
      </div>
-
-     <div class="panel-heading text-rigth"><strong>Amigos</strong>
-        <ul>
-         <li>Henry Jason</li>
-         <li>Henry Jason2</li>
-         <li>Henry Jason3</li>
-         <li>Henry Jason4</li>
-     </ul>
-
- </div>
-
- <div class="panel-heading text-rigth"><strong>Sugeridos</strong>
-    <ul>
-     <li>Henry Jason</li>
-     <li>Henry Jason2</li>
-     <li>Henry Jason3</li>
-     <li>Henry Jason4</li>
- </ul>
-
-</div>
-
 
 
      </div>

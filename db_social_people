@@ -3,13 +3,14 @@
 
 create table users(
 	id serial not null primary key,
-	avatar varchar not null,
+	avatar varchar,
 	nombre varchar not null,
-	biografia varchar not null,
+	apellido varchar not null,
+	biografia varchar,
 	email varchar not null,
 	nickname varchar not null,
-	telefono varchar not null,
-	dirección varchar not null,
+	telefono varchar,
+	dirección varchar,
 	remember_token varchar,
 	password varchar not null
 );

@@ -52,12 +52,23 @@ class UserController extends BaseController
 
         $email = Input::get('email');
         $password = Input::get('password');
+        $nombre = Input::get('nombre');
+        $apellido = Input::get('apellido');
+        $nickname = '@'.Input::get('nickname');
+
+
         $user = new User;
+
         $user->email = $email;
         $user->password = Hash::make($password);
+        $user->nombre = $nombre;
+        $user->apellido = $apellido;
+        $user->nickname = $nickname;
+
         $user->save();
-        Auth::attempt(array('email' => $email, 'password' => $password));
-        return Redirect::to('home');
+
+        Auth::attempt(array('email' => $email, 'password' => $password, 'nombre' => $nombre, 'apellido' => $apellido, 'nickname' => $nickname));
+        return Redirect::to('/');
     }
 
     public function isLogged()
