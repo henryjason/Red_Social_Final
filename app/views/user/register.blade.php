@@ -55,8 +55,9 @@
 
 <!-- /.container -->
 
-
 </nav>
+
+
 
 
 <div class="row1">
@@ -64,6 +65,7 @@
   
 <div class="col-xs-12 col-sm-5">
 
+<br>
 
  <form role="form" method="post" action="login">
 
@@ -234,17 +236,20 @@
 
 <div class="col-xs-12 col-sm-7">
 
+
+
    <div class="row">
        <div class="col-md-12">
 
-           <div class="panel-heading text-rigth"><strong>Conectar con facebook</strong>
-         
+       <div class="facebook">
+
+           <div><strong>Conectar con facebook</strong></div>
+
+</div>
+
      </div>
 
 
-     </div>
-
-   </div>
 
 </div>
 

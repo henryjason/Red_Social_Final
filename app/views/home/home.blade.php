@@ -18,7 +18,7 @@
 
                 <div class="navbar-brand">
 
-                <a href="#">Social People</a>
+                {{HTML::link('/', 'Inicio')}}
                  <!-- <input type="text" >
                   <button type="button">Buscar</button> -->
       
@@ -30,14 +30,30 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">About</a>
+                        {{HTML::link('/', 'Solicitudes')}}
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        {{HTML::link('/', 'Mensajes')}}
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        {{HTML::link('/', 'Notificaciones')}}
                     </li>
+
+                    <li>
+                       {{HTML::link('/', 'Perfil')}}
+                    </li>
+
+                    <li>
+        
+                 @if (Auth::check())
+
+  {{HTML::link('logout', 'Logout')}}
+
+@else
+  {{HTML::link('login', 'Login')}}
+
+@endif
+      </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

@@ -17,3 +17,10 @@ body {
     background-size: cover;
     -o-background-size: cover;
 }
+
+.facebook {
+margin-top: 30%; /* Restamos la mitad de la altura del objeto con un margin-top */
+margin-left: 10%; /* Restamos la mitad de la anchura del objeto con un margin-left */
+margin-right: 10%; /* Restamos la mitad de la anchura del objeto con un margin-left */
+
+}

@@ -28,6 +28,7 @@ return array(
 
 	'url' => 'http://localhost',
 
+   // 'url' => 'http://henryjason-001-site6.smarterasp.net',
 	/*
 	|--------------------------------------------------------------------------
 	| Application Timezone

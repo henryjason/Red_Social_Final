@@ -54,10 +54,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'MYSQL5007.Smarterasp.net',
-			'database'  => 'db_9a9d5e_social',
-			'username'  => '9a9d5e_social',
-			'password'  => '123456789',
+			'host'      => 'localhost',
+			'database'  => 'forge',
+			'username'  => 'forge',
+			'password'  => '',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
